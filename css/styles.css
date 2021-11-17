@@ -42,6 +42,9 @@ ul{
     background: linear-gradient(
     90deg, rgb(12, 7, 104) 0%, rgba(84,92,214,1) 35%);
   }
+  .read-btn:hover{
+    background: rgba(84, 93, 214, 0.767) !important;
+  }
 .buy-btn{
   width: 150px;
   height: 50px;
@@ -51,6 +54,9 @@ ul{
   border: 1px solid lightgray;
   text-align: center;
   background: white;
+}
+.buy-btn:hover{
+  background: rgb(248, 246, 246);
 }
 .see-more{
   width: 170px;
@@ -89,6 +95,9 @@ ul{
     text-decoration: none;
     background: #ffffff;
     border: 1px solid #ffffff;
+}
+.start-btn:hover {
+  background: rgb(248, 246, 246);
 }
 
 .phone-img{
@@ -209,6 +218,15 @@ ul{
   right: 20px;
   background-color: rgb(98, 107, 233);
   display: none;
+}
+#main-menu{
+  display: none;
+}
+#main-menu a {
+  color: #1d1d1d !important;
+}
+.marg-17{
+  margin-left: 17rem;
 }
 .owl-carousel .nav-btn{
     position: absolute;
@@ -446,8 +464,8 @@ ul{
 }
 .icon_wrapper{
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border: 1px solid rgba(255, 255, 255, 0.48);
   text-align: center;
   line-height: 100px;
@@ -501,14 +519,13 @@ ul{
     border-top-left-radius: 10px;
     outline: none;
 }
+.icon_wrapper .fas{
+  font-size: 30px;
+}
 .input-wrapper button{
-  float: left;
-    width: 50
-px
-;
-    height: 50
-px
-;
+    float: left;
+    width: 50px;
+    height: 50px;
     line-height: 50px;
     text-align: center;
     border: 0;
@@ -563,6 +580,9 @@ px
    }
    .w-img-100{
      width:50% !important;
+   }
+   .marg-17{
+     margin-left: 0;
    }
   }
   

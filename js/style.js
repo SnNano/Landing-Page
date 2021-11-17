@@ -4,8 +4,8 @@ $('.owl-carousel').owlCarousel({
     margin:10,
     nav:true,
     dots:false,
-    navText:["<div class='nav-btn prev-slide hidden-sm hidden-xs'><i class='fas fa-angle-double-left'></i></div>",
-    "<div class='nav-btn next-slide hidden-sm hidden-xs'><i class='fas fa-angle-double-right'></i></div>"],
+    navText:["<div class='nav-btn prev-slide hidden-md'><i class='fas fa-angle-double-left'></i></div>",
+    "<div class='nav-btn next-slide hidden-md'><i class='fas fa-angle-double-right'></i></div>"],
     responsive:{
         0:{
             items:1
@@ -20,10 +20,12 @@ $('.owl-carousel').owlCarousel({
 });
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
+let myMainMenu = document.getElementById('main-menu');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
+  scrollMenu();
 };
 
 function scrollFunction() {
@@ -35,6 +37,14 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
+}
+function scrollMenu(){
+  if( document.body.scrollTop > 150 ||
+    document.documentElement.scrollTop > 150){
+      myMainMenu.style.display ="inline";
+    } else {
+      myMainMenu.style.display="none";
+    }
 }
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
