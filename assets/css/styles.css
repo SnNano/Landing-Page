@@ -172,10 +172,10 @@ ul{
 }
 .item-box{
     float: left;
-    background: #f7f8ff;
+    background: #fff;
     border: 1px solid #e3e3e3;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px;
     padding-top: 60px;
     padding-bottom: 30px;
     width: 100%;
@@ -366,13 +366,16 @@ ul{
       float: left;
       border-radius: 10px;
   }
+  .navbar-brand{
+    margin-left: -24px;
+  }
  .image-inside{
     float: left;
     width: 270px;
-    background: #f7f8ff;
+    background: #d6d7dd;
     text-align: center;
-    height: 198px;
-    line-height: 199px;
+    height: 220px;
+    line-height: 220px;
     position: relative;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
